@@ -31,7 +31,7 @@ const NewsBookmarkButton = ({ article }: NewsBookmarkButtonProps) => {
 	};
 	return (
 		<Button
-			className="scale-0 opacity-0  cursor-pointer absolute top-2 right-2  dark:bg-black/50  dark:hover:bg-black/75 group-hover:scale-100 group-hover:opacity-100 duration-300"
+			className="xl:scale-0 xl:opacity-0 cursor-pointer absolute top-2 right-2  dark:bg-black/50  dark:hover:bg-black/75 group-hover:scale-100 group-hover:opacity-100 duration-300"
 			variant="outline"
 			size="icon"
 			disabled={isPending}
