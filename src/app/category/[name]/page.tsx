@@ -1,6 +1,6 @@
 import { Category } from "@/@types/category";
 import { searchNewsByCategory } from "@/actions/news-action";
-import LoadingPage from "@/app/loading";
+import Loading from "@/app/loading";
 import Header from "@/components/header";
 import NewsList from "@/components/news-list";
 import { Suspense } from "react";
@@ -15,8 +15,7 @@ const CategoryPage = async ({
 	return (
 		<div className="px-7 py-7 sm:px-10 pb-10 ">
 			<Header>Top news in {name}</Header>
-
-			<Suspense fallback={<LoadingPage />}>
+			<Suspense fallback={<Loading />}>
 				<SuspenseWrapper name={name} />
 			</Suspense>
 		</div>

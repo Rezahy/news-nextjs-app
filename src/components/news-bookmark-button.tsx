@@ -1,4 +1,5 @@
 "use client";
+
 import { Bookmark, Loader } from "lucide-react";
 import { Button } from "./ui/button";
 import { Article } from "@/@types/news";
