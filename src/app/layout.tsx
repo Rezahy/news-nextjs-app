@@ -7,6 +7,7 @@ import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/app-sidebar";
 import { ModeToggle } from "@/components/mode-toggle";
 import AppToaster from "@/components/app-toaster";
+import Footer from "@/components/footer";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -59,6 +60,7 @@ export default function RootLayout({
 							</div>
 						</SidebarProvider>
 						<AppToaster />
+						<Footer />
 					</ThemeProvider>
 				</NewsStoreProvider>
 			</body>
